@@ -1,0 +1,334 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font Weights:
+
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+-Line Heights: 
+
+Default: 1
+Small: 1.05
+Medium: 1,2
+Paragraph default: 1.6
+
+-Letter Spacing:
+-0.5 px 
+-0.75 px
+
+-- 02 COLORS
+
+-Primary: 
+
+background: #0FF760;
+text: color: #08182A;
+
+-Tints: 
+
+-Shades: 
+
+-Accents:
+
+-Greys: 
+
+-- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.75);
+
+-- 06 BORDER-RADIUS
+
+Small: 9px
+Meidum: 11px
+
+-- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    font-family: 'Noto Serif Georgian', serif;
+    scroll-behavior: smooth;
+    color: #000000;
+    background-color: whitesmoke;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+/*  PEOPLE SALARYS CONTAINER */
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.salarys {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.salarys-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 46rem;
+    margin-bottom: 2.5rem;
+    background-color: #abffb9;
+    border-radius: 11px;
+    border: solid 1px #000;
+    overflow: scroll;
+}
+
+.box-salary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23rem;
+    margin: 1rem .5rem;
+}
+
+.box-salary__name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.data-element {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 1rem;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-bottom: solid 1px #000;
+    overflow: hidden;
+}
+
+/* ENTERPRISE SALARYS  CONTAINER */
+
+.enterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23rem;
+    margin: 1rem .5rem;
+}
+
+.enterprise__name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.enterprise__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.data-year {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: dashed 1px #000;
+}
+
+.data-year__text {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.data-year__amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}
+
+/* BUTTONS */
+
+.salarys-enterprises__btn {
+    padding: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 11px;
+    border: solid 1px #000;
+    border-bottom: none;
+    background-color: #00D64F;
+    box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.3s;
+}
+
+.salarys-enterprises__btn:hover,
+.salarys-enterprises__btn:active {
+    background-color: #abffaf;
+}
+
+.salarys-enterprises__btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+span svg {
+    width: 2rem;
+    margin-right: .5rem;
+}
+
+.salarys-people__btn {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #00D64F;
+    border-radius: 11px;
+    border: solid 1px #000;
+    border-bottom: none;
+    box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.3s;
+}
+
+.salarys-people__btn:hover,
+.salarys-people__btn:active {
+    background-color: #abffaf;
+}
+
+
+.salarys-people__btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+/* PROJECTIONS CONTAINER */
+
+.projections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projections-container {
+    margin-bottom: 2rem;
+}
+
+.projection-title__second {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.projection-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.projections-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projection-options__name {
+    padding: .3rem;
+    border: .5px solid #030e1a;
+    border-radius: 11px;
+    background-color: #00D64F;
+    cursor: pointer;
+}
+
+.projection-options__btn {
+    padding: .3rem;
+    border: .5px solid #030e1a;
+    border-radius: 11px;
+    background-color: #00D64F;
+    cursor: pointer;
+}
+
+.projection-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 5rem;
+    font-size: 1.7rem;
+    border: solid 1px #000;
+    border-radius: 11px;
+}
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1 rem = 1em = 16px */
+
+/* Below 944px (Tablets) */
+
+@media (min-width: 50em) and (max-width: 75em) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.8rem;
+    }
+
+    .salarys-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        font-size: 2rem;
+    }
+
+    .projection-title__second {
+        font-size: 2.4rem;
+    }
+
+    .projection-title {
+        font-size: 2rem;
+    }
+
+    .projection-options__name {
+        font-size: 1.8rem;
+    }
+
+    .projection-options__btn {
+        font-size: 1.8rem;
+    }
+
+    .projection-result {
+        font-size: 1.8rem;
+    }
+}
