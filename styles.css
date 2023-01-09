@@ -109,7 +109,7 @@ body {
     width: 100%;
     height: 46rem;
     margin-bottom: 2.5rem;
-    background-color: #abffb9;
+    background-color: #6aa3ff;
     border-radius: 11px;
     border: solid 1px #000;
     overflow: scroll;
@@ -190,14 +190,14 @@ body {
     border-radius: 11px;
     border: solid 1px #000;
     border-bottom: none;
-    background-color: #00D64F;
+    background-color: #6aa3ff;
     box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.12);
     transition: all 0.3s;
 }
 
 .salarys-enterprises__btn:hover,
 .salarys-enterprises__btn:active {
-    background-color: #abffaf;
+    background-color: #93bcfd;
 }
 
 .salarys-enterprises__btn span {
@@ -215,7 +215,7 @@ span svg {
 .salarys-people__btn {
     padding: 1rem;
     cursor: pointer;
-    background-color: #00D64F;
+    background-color: #6aa3ff;
     border-radius: 11px;
     border: solid 1px #000;
     border-bottom: none;
@@ -225,9 +225,8 @@ span svg {
 
 .salarys-people__btn:hover,
 .salarys-people__btn:active {
-    background-color: #abffaf;
+    background-color: #93bcfd;
 }
-
 
 .salarys-people__btn span {
     display: flex;
@@ -269,7 +268,7 @@ span svg {
     padding: .3rem;
     border: .5px solid #030e1a;
     border-radius: 11px;
-    background-color: #00D64F;
+    background-color: #93bcfd;
     cursor: pointer;
 }
 
@@ -277,7 +276,7 @@ span svg {
     padding: .3rem;
     border: .5px solid #030e1a;
     border-radius: 11px;
-    background-color: #00D64F;
+    background-color: #93bcfd;
     cursor: pointer;
 }
 
