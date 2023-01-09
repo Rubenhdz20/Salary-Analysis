@@ -61,7 +61,8 @@ function medianaEmpresaYear(nombre, year) {
     if (!empresas[nombre]) {
       console.warn('La empresa no existe');
     } else if (!empresas[nombre][year]) {
-      enterpriseAverageResult.innerText = console.warn('La empresa no dio salarios ese año');
+      const result = "No records found";
+      enterpriseAverageResult.innerText = result;
     } else {
       return PlatziMath.calcularMediana(empresas[nombre][year]);
     }

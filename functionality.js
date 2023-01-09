@@ -2,13 +2,16 @@
 const salarysContainer = document.querySelector("#salarys-box");
 const enterpriseButton = document.querySelector("#enterprises-btn");
 const peopleButton = document.querySelector("#people-btn");
+
 const enterpriseProjectionName = document.querySelector("#projection-enterprise");
 const enterpriseProjectionButton = document.querySelector("#projection-btn");
 const enterpriseProjectionResult = document.querySelector("#projection-enterprise__result");
+
 const enterpriseAverageName = document.querySelector("#projection-average");
 const enterpriseAverageYear = document.querySelector("#average-enterprise__year");
 const enterpriseAverageButton = document.querySelector("#average-enterprise__btn");
 const enterpriseAverageResult = document.querySelector("#average-enterprise__result");
+
 const enterpriseIncrementYear = document.querySelector("#enterprise-increment-year");
 const enterpriseIncrementButton = document.querySelector("#enterprise-increment-button");
 const enterpriseIncrementResult = document.querySelector("#enterprise-increment-result");
@@ -22,7 +25,6 @@ enterpriseIncrementButton.addEventListener("click", printIncrement);
 function printEnterpriseProjection() {
     const name = enterpriseProjectionName.value;
     const result = "$" + Math.round(proyeccionPorEmpresa(name));
-
     enterpriseProjectionResult.innerText = result;
 }
 
